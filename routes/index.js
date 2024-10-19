@@ -14,4 +14,8 @@ route.get("/showuser/:id", showById);
 route.get("/showusername/:name",showByName );
 route.put("/update/:id",update);
 route.delete("/delete/:id",deleteUser);
+route.get("/chatRoute", function(req,res){
+    res.render('chat') // nom page twig
+});
+
 module.exports=route
